@@ -5,7 +5,8 @@ from secondapp.models import Product
 class Command(BaseCommand):
     help = "Create product."
     def handle(self, *args, **kwargs):
-        product = Product(name='butter', price=1.99, description="for lunch",
-                    count_product=126)
-        product.save()
-        self.stdout.write(f'{product}')
+        for i in range(1, 100):
+            product = Product(name=f'butter{i}', price=1.99, description=f"for lunch{i}",
+                                             count_product=126)
+            product.save()
+            self.stdout.write(f'{product}')
