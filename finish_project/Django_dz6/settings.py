@@ -37,7 +37,7 @@ CSRF_COOKIE_SECURE = True
 
 ALLOWED_HOSTS = [
     '127.0.0.1',
-    'faermensons.pythonanywhere.com',
+    'Faermensons.pythonanywhere.com',
 ]
 
 
@@ -97,10 +97,10 @@ WSGI_APPLICATION = 'Django_dz6.wsgi.application'
 DATABASES = {
          'default': {
              'ENGINE': 'django.db.backends.mysql',
-             'NAME': 'Zep314$default',
-             'USER': 'Zep314',
+             'NAME': 'Faermensons$default',
+             'USER': 'Faermensons',
              'PASSWORD': os.getenv('MYSQL_PASSWORD'),
-             'HOST': 'Zep314.mysql.pythonanywhere-services.com',
+             'HOST': 'Faermensons.mysql.pythonanywhere-services.com',
              'OPTIONS': {
                  'init_command': "SET NAMES 'utf8mb4';SET sql_mode='STRICT_TRANS_TABLES'",
                  'charset': 'utf8mb4',
